@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script:wght@400;600&family=Great+Vibes&display=swap");
+
+// cd next-frontend
+// cd sanity-server
+// npm run dev         { params }:any
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #353b3f;
+  font-family: "Crimson Text", serif;
+}
+
+.image {
+  position: static !important;
+}
+
+.portable-text h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.portable-text h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.portable-text p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.blog-card {
+  /* The card */
+  .card {
+    height: 340px;
+    width: 350px;
+    padding: 5px 20px;
+    background-color: #eeecec;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .left {
+    position: relative;
+    left: 10px;
+    top: -35px;
+    margin-bottom: -20px;
+    height: 170px;
+    width: 300px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  // p {
+  //   font-size: 0.95rem;
+  //   color: #4b4b4b;
+  //   height: 50px;
+  //   text-overflow: ellipsis;
+  //   white-space: inherit;
+  //   overflow: hidden;
+  // }
+}
+.author {
+  box-shadow: 1px 1px 4px rgba(169, 171, 171, 0.708);
+  height: 32px;
+  width: fit-content;
+  border-radius: 20px;
+  img {
+    box-shadow: 1px 1px 3px rgb(82, 82, 82);
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
+}
+.date {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  h6 {
+    font-size: 14px;
+    color: #7ae2d6;
+  }
+}
+
+.heroSec {
+  button {
+    transition: all 0.3s ease;
+  }
+  button:active {
+    scale: 0.9;
+  }
+}
+
+.custom-btn {
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    4px 4px 10px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* 15 */
+.btn-15 {
+  background: #58f4f7;
+  border: none;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #5da7a8b6;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    4px 4px 10px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+
+.arrowIcon {
+  transition: all 0.3s ease;
+  position: relative;
+}
+.btn-15:hover .arrowIcon {
+  left: 5px;
+}
