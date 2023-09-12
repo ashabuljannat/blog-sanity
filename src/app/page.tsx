@@ -2,7 +2,6 @@ import HeroSection from "./components/HeroSection";
 import Cards from "./components/Card";
 import { fetchTutorials } from "./sanity/api";
 
-
 export default async function Home() {
   const blogRes = await fetchTutorials(`*[_type == "blog"]`);
   blogRes.length = 6; //latest 3 blogs
@@ -24,7 +23,7 @@ export default async function Home() {
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-x-2 w-[80%]  mx-auto bg-[#353b3f]">
-          {blogRes.map((val: any,index: number) => {
+          {blogRes.map((val: any, index: number) => {
             const {
               _id,
               title,
@@ -39,9 +38,9 @@ export default async function Home() {
 
             return (
               <Cards
-              key={index}
+                key={index}
                 dataset="blog"
-                id={index}
+                id={_id}
                 url={url}
                 image={image}
                 content={content}
@@ -67,7 +66,7 @@ export default async function Home() {
         </div>
 
         <div className="flex h-[400px] w-[90%] pt-7 m-auto overflow-auto bg-[#353b3f]">
-          {tutorialRes.map((val: any,index: number) => {
+          {tutorialRes.map((val: any, index: number) => {
             const {
               _id,
               title,
@@ -82,8 +81,8 @@ export default async function Home() {
 
             return (
               <Cards
-              key={index}
-                id={index}
+                key={index}
+                id={_id}
                 dataset="tutorials"
                 url={url}
                 image={image}

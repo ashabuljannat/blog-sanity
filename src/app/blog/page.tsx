@@ -33,7 +33,7 @@ const Tutorials = async () => {
             return (
               <Cards
               key={index}
-                id={index}
+              id={_id}
                 url={url}
                 image={image}
                 content={content}

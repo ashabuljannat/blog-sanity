@@ -17,7 +17,7 @@ const Tutorials = async () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-1.5 ">
-          {res.map((val: any,index:number) => {
+          {res.map((val: any, index: number) => {
             const {
               _id,
               title,
@@ -32,7 +32,7 @@ const Tutorials = async () => {
 
             return (
               <Cards
-                id={index}
+                id={_id}
                 key={index}
                 url={url}
                 image={image}

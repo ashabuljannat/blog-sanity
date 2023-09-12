@@ -49,7 +49,7 @@ const Cards = (props: CardProps) => {
           </h2>
         </div>
 
-        {/* 01718251064 jannat com */}
+
         <button className="custom-btn btn-15">
           <Link className="items-center flex text-sm" href={`/${dataset}/${id}`}>
             Learn More <BsArrowRight className="arrowIcon ml-1" />
